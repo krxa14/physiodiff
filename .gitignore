@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Coverage / test artifacts
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+test_report.txt
+
+# IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Database (generated — recreate with mock_engine.py)
+app/synthetic/physio.db
+
+# Secrets / env
+.env
+*.env
+
+# Claude internal
+.claude/settings.local.json
