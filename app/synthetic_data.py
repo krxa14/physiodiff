@@ -13,7 +13,7 @@ from typing import List, Dict, Any
 import numpy as np
 
 from app.models.dhs_algorithm import calculate_dhs
-from app.sentiment_analysis import analyze_sentiment
+from app.services.sentiment_analysis import analyze_sentiment
 
 WARDS = ["Medical Ward A", "Medical Ward B", "Surgical Ward", "HDU", "CCU", "Cardiology", "Respiratory"]
 

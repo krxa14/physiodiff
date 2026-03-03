@@ -30,7 +30,7 @@ test_report.txt
 *.swo
 
 # Database (generated — recreate with mock_engine.py)
-app/synthetic/physio.db
+data/*.db
 
 # Secrets / env
 .env

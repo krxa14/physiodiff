@@ -11,7 +11,7 @@ client = TestClient(app)
 def ensure_db():
     """Ensure the test database is generated before any API tests run."""
     import os
-    db_path = os.path.join(os.path.dirname(__file__), "..", "app", "synthetic", "physio.db")
+    db_path = os.path.join(os.path.dirname(__file__), "..", "data", "physio.db")
     if not os.path.exists(db_path):
         from app.synthetic.mock_engine import build_database
         build_database(db_path=db_path, n_patients=50, seed=42)
