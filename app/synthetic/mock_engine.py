@@ -21,7 +21,7 @@ if _PROJECT_ROOT not in sys.path:
 
 from app.synthetic_data import generate_patients
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "physio.db")
+DB_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data", "physio.db"))
 
 
 def create_schema(conn: sqlite3.Connection) -> None:

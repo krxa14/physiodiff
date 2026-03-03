@@ -1,6 +1,6 @@
 """Tests for sentiment analysis heuristic."""
 import pytest
-from app.sentiment_analysis import analyze_sentiment, _heuristic_sentiment
+from app.services.sentiment_analysis import analyze_sentiment, _heuristic_sentiment
 
 
 class TestHeuristicSentiment:

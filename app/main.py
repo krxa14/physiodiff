@@ -26,11 +26,11 @@ from pydantic import BaseModel
 
 from app.models.dhs_algorithm import calculate_dhs
 from app.models.risk_modeling import forecast_risk
-from app.sentiment_analysis import analyze_sentiment
+from app.services.sentiment_analysis import analyze_sentiment
 
 # ─── Constants ────────────────────────────────────────────────────────────────
 _HERE = os.path.dirname(__file__)
-DB_PATH = os.path.join(_HERE, "synthetic", "physio.db")
+DB_PATH = os.path.abspath(os.path.join(_HERE, "..", "data", "physio.db"))
 STATIC_DIR = os.path.join(_HERE, "static")
 
 # ─── App Setup ────────────────────────────────────────────────────────────────
