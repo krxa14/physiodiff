@@ -36,5 +36,3 @@ data/*.db
 .env
 *.env
 
-# Claude internal
-.claude/settings.local.json
