@@ -64,10 +64,9 @@ PhysioDiff/
 │   ├── test_mock_engine.py
 │   └── test_api.py
 ├── requirements.txt
-└── CLAUDE.md                    Architecture spec + constants
 ```
 
----
+--
 
 ## API Endpoints
 
